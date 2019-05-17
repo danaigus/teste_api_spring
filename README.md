@@ -24,7 +24,7 @@ $ docker-compose up
 
 Para facilitar o processo de teste da API, a coleção de requisições Http prontas que estão no arquivo Teste_API_REST.postman_collection.json podem ser importadas na ferramenta Postman.
 
-## Adicionar um planeta (com Nome, clima e terreno)
+## Adicionar um planeta (com nome, clima e terreno)
 
 #### POST localhost:8080/api/planets
 ```json
