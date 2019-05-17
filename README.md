@@ -1,4 +1,8 @@
-# API REST B2W
+# API REST Star Wars Planets B2W
+
+Essa é uma API REST criada na fase de testes para a vaga de Back-End na B2W Digital.  
+Esta aplicação foi escrita em Java, utilizando o framework Spring e o banco de dados MongoDB.  
+A aplicação e o banco de dados rodam em containers Docker.
 
 ## Dependências da aplicação
 
@@ -18,9 +22,9 @@ $ docker-compose up
 
 ## Testando a API
 
-Para facilitar o processo de teste da API, o arquivo B2W.postman_collection.json pode ser importado na ferramenta Postman.
+Para facilitar o processo de teste da API, a coleção de requisições Http prontas que estão no arquivo Teste_API_REST.postman_collection.json podem ser importadas na ferramenta Postman.
 
-## Adicionar um planeta
+## Adicionar um planeta (com Nome, clima e terreno)
 
 #### POST localhost:8080/api/planets
 ```json
