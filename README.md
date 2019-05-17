@@ -1,4 +1,4 @@
-# API REST Star Wars Planets B2W
+# REST API Star Wars Planets B2W
 
 Essa é uma API REST criada na fase de testes para a vaga de Back-End na B2W Digital.  
 Esta aplicação foi escrita em Java, utilizando o framework Spring e o banco de dados MongoDB.  
@@ -69,4 +69,5 @@ body    { "name": "Utapau", "climate": "temperate, arid, windy", "terrain": "scr
 
 ## Observações
 
-A inicialização do container do MongoDB pode falhar caso uma estância do MongoDB já esteja rodando na maquina.
+A inicialização do container do MongoDB pode falhar caso uma estância do MongoDB já esteja rodando na maquina.  
+Finalizar o processo local do MongoDB antes de iniciar os containers resolve o problema.
