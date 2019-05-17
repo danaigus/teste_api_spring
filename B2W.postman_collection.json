@@ -200,7 +200,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/planets?name=d",
+					"raw": "localhost:8080/api/planets?name=\"Replace with name to search\"",
 					"host": [
 						"localhost"
 					],
@@ -212,7 +212,7 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "d"
+							"value": "\"Replace with name to search\""
 						}
 					]
 				}
@@ -296,7 +296,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/swapi/planets?page=5",
+					"raw": "localhost:8080/api/swapi/planets?page=\"Replace with page number\"",
 					"host": [
 						"localhost"
 					],
@@ -309,7 +309,7 @@
 					"query": [
 						{
 							"key": "page",
-							"value": "5"
+							"value": "\"Replace with page number\""
 						}
 					]
 				}
