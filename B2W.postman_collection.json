@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "6a62fc3a-b7ce-4db0-83c1-0cfbdd77a1cb",
+		"name": "B2W",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create \"Coruscant\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Coruscant\",\n\t\"climate\": \"temperate\",\n\t\"terrain\": \"cityscape, mountains\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create \"Kamino\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Kamino\",\n\t\"climate\": \"temperate\",\n\t\"terrain\": \"ocean\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create \"Naboo\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Naboo\",\n\t\"climate\": \"temperate\",\n\t\"terrain\": \"grassy hills, swamps, forests, mountains\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create \"Dagobah\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Dagobah\",\n\t\"climate\": \"murky\",\n\t\"terrain\": \"swamp, jungles\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create \"Alderaan\"",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Alderaan\",\n\t\"climate\": \"temperate\",\n\t\"terrain\": \"grasslands, mountains\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get planet by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/planets/\"Replace with ID\"",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets",
+						"\"Replace with ID\""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/planets?name=d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update planet with id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Utapau\",\n\t\"climate\": \"temperate, arid, windy\",\n\t\"terrain\": \"scrublands, savanna, canyons, sinkholes\",\n\t\"appears\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/planets/\"Replace with ID\"",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets",
+						"\"Replace with ID\""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete planet with id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/planets/\"Replace with ID\"",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"planets",
+						"\"Replace with ID\""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get SWAPI planets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/swapi/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"swapi",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get SWAPI planets with page number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/swapi/planets?page=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"swapi",
+						"planets"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,15 @@
+version: "3.7"
+services: 
+  mongodb:
+    image: mongo:4.0.9
+    container_name: "mongodb"
+    ports:
+      - 27017:27017
+    command:
+      --smallfiles
+  app:
+    image: b2w/rest_api
+    ports:
+      - 8080:8080
+    links:
+      - mongodb
