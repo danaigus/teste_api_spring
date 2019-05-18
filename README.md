@@ -11,12 +11,18 @@ A aplicação e o banco de dados rodam em containers Docker.
 - Docker
 - Docker Compose
 
-## Instruções para executar a aplicação
+## Instruções para construir e executar a aplicação
 
 Dentro da pasta rest_api, executar os comandos:
 
+- Para construir a aplicação:
+
 ```shell
 $ mvn package
+```
+- Para executar a aplicação:
+
+```shell
 $ docker-compose up
 ```
 
