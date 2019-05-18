@@ -26,6 +26,14 @@ $ mvn package
 $ docker-compose up
 ```
 
+## Observações
+
+A inicialização do container do MongoDB pode falhar caso uma estância do MongoDB já esteja rodando na maquina.  
+Finalizar o processo local do MongoDB antes de iniciar os containers resolve o problema.
+
+No Windows é necessário ativar a opção “Expose daemon tcp://localhost:2375 without TLS” nas configurações gerais do Docker.
+Sem essa opção não é possivel realizar a criação do container da aplicação.
+
 ## Testando a API
 
 Para facilitar o processo de teste da API, a coleção de requisições Http prontas que estão no arquivo Teste_API_REST.postman_collection.json podem ser importadas na ferramenta Postman.
@@ -160,10 +168,3 @@ Atualiza o planeta com o ID igual ao fornecido na URL da requisição e retorna 
     "appears": 1
 }
 ```
-
-<br>
-
-## Observações
-
-A inicialização do container do MongoDB pode falhar caso uma estância do MongoDB já esteja rodando na maquina.  
-Finalizar o processo local do MongoDB antes de iniciar os containers resolve o problema.
