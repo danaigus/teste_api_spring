@@ -52,7 +52,7 @@ Body:
 }
 ```
 
-Utiliza o nome fornecido para descrobrir quantas aparições em filmes o planeta possui, através da [API Star Wars](https://swapi.co/), e retorna o planeta criado, por exemplo:
+Utiliza o nome fornecido para descobrir quantas aparições em filmes o planeta possui, através da [API Star Wars](https://swapi.co/), e retorna o planeta criado, por exemplo:
 ```json
 {
     "id": "5cddfcd4a7b11b000142b67f",
