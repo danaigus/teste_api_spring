@@ -1,6 +1,6 @@
 # API REST Planetas Star Wars
 
-Essa é uma API REST criada na fase de testes para a vaga de Back-End na B2W Digital.  
+Essa é uma API REST criada na fase de testes para a vaga de Back-End.  
 Esta aplicação foi escrita em Java, utilizando o framework Spring e o banco de dados MongoDB.  
 A aplicação e o banco de dados rodam em containers Docker.
 
